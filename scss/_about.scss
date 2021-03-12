@@ -1,0 +1,230 @@
+.about__hero__title {
+  font-weight: weight(bold);
+  font-size: 40px;
+  line-height: 60px;
+  width: 426px;
+}
+
+.about__hero__paragraph {
+  width: 460px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+      background: -webkit-linear-gradient(top, #fd749b -13.56%, #281ac8 158.3%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: 512px;
+      position: relative;
+
+      &::after {
+        @include titleUnderline;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -16px;
+      }
+    }
+    &__author {
+      font-size: 14px;
+      line-height: 25px;
+      color: $text-gray;
+      margin-top: 30px;
+    }
+  }
+  &__container {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1048px;
+    background: #fff;
+    border-radius: 30px;
+    border: 1px solid #281ac8;
+    padding: 35px 260px;
+
+    &__title {
+      margin-top: 40px;
+      font-size: 28px;
+      line-height: 65px;
+      background: -webkit-linear-gradient(top, #fd749b -13.56%, #281ac8 158.3%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &__paragraph {
+      line-height: 40px;
+      text-align: center;
+      color: $text-gray;
+      margin-bottom: 35px;
+    }
+    &__icons {
+      display: flex;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+
+  &__title {
+    font-size: 28px;
+    line-height: 65px;
+    background: -webkit-linear-gradient(top, #fd749b -13.56%, #281ac8 158.3%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+    &::after {
+      @include titleUnderline;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__container {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    position: relative;
+
+    &__article {
+      width: 418px;
+      text-align: right;
+      position: relative;
+      right: 25%;
+      margin-bottom: 50px;
+
+      &:nth-of-type(2) {
+        left: 25%;
+        text-align: left;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 25px;
+        background: -webkit-linear-gradient(
+          135deg,
+          #fd749b -13.56%,
+          #281ac8 158.3%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      p {
+        font-size: 14px;
+        line-height: 30px;
+        color: $text-gray;
+      }
+    }
+    &__timeline {
+      height: 100%;
+      top: -5%;
+      width: 4px;
+      background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+      position: absolute;
+    }
+    h4 {
+      text-transform: uppercase;
+      margin-top: 5vh;
+    }
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 125px;
+
+  &__title {
+    font-size: 28px;
+    line-height: 65px;
+    background: -webkit-linear-gradient(
+      270deg,
+      #fd749b -13.56%,
+      #281ac8 158.3%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+    &::after {
+      @include titleUnderline;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__paragraph {
+    margin-top: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: $text-gray;
+    width: 542px;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+  }
+
+  .slider__info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover .slider__info {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.about__subscribe__title {
+  margin-top: 80px;
+}

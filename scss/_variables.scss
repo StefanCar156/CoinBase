@@ -1,0 +1,37 @@
+// Variables
+
+$text-gray: #333333;
+
+// Mixins
+
+@mixin discoverBtn {
+  text-transform: uppercase;
+  padding: 17px 33px;
+  font-size: 14px;
+  font-weight: weight(bold);
+  line-height: 21px;
+  color: #fff;
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  border-radius: 100px;
+}
+
+@mixin titleUnderline {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 50px;
+  border-radius: 70px;
+  bottom: 0px;
+  left: 0;
+  background-color: #fd749b;
+}
+
+// Maps
+$font-weights: (
+  "normal": 400,
+  "bold": 700,
+);
+// Functions
+@function weight($weight-key) {
+  @return map-get($font-weights, $weight-key);
+}
