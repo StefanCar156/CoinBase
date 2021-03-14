@@ -47,10 +47,9 @@
         #fd749b -13.56%,
         #281ac8 158.3%
       );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradientText;
       text-transform: uppercase;
+      text-align: center;
       margin-bottom: 15px;
     }
     &__info {
@@ -73,3 +72,5 @@
     }
   }
 }
+
+@import "./blog-responsive"

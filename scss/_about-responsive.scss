@@ -1,0 +1,183 @@
+@media screen and (max-width: 1220px) {
+    .about {
+        &__container {
+            padding: 35px 120px;
+            width: 80%;
+
+            &__img {
+                width: 60%;
+                min-width: 320px;
+            }
+            &__title {
+                font-size: 24px;
+            }
+            &__paragraph {
+                line-height: 30px;
+            }
+        }
+    }
+    .history {
+        &__title {
+            font-size: 21px;
+            line-height: 31px;
+
+            &::after {
+                bottom: -8px;
+              }
+        }
+        &__container {
+            &__article {
+                width: 360px;
+                right: 30%;
+
+                h3 {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    .team {
+        &__title {
+            font-size: 21px;
+            line-height: 31px;
+            &::after {
+              bottom: -8px;
+            }
+        }
+        &__paragraph {
+            line-height: 30px;
+        }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .about {
+      &__quote__text {
+        z-index: -1;
+      }
+      &__container {
+        padding: 30px 60px;
+
+        &__title {
+          font-size: 20px;
+          margin-top: 0;
+        }
+        &__paragraph {
+            line-height: 24px;
+            font-size: 14px;
+        }
+      }
+    }
+    .history {
+      &__title {
+        z-index: -1;
+      }
+      &__container {
+        z-index: -1;
+
+        &__article {
+          width: 35vw;
+
+          p {
+            line-height: 25px;
+          }
+        }
+      }
+    }
+    .team {
+      &__title {
+        z-index: -1;
+      }
+      .swiper-container {
+        z-index: -1 !important;
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .about {
+      &__quote {
+        &__text {
+          font-size: 14px;
+          line-height: 26px;
+          width: 80%;
+        }
+      }
+      &__container {
+        &__img {
+          min-width: 280px;
+        }
+        &__title {
+          font-size: 20px;
+        }
+        &__paragraph {
+          line-height: 20px;
+          text-align: justify;
+        }
+      }
+    }
+    .history {
+      &__container {
+        &__article {
+          position: static;
+          width: 100%;
+          text-align: center;
+
+          &:nth-of-type(2) {
+            left: 20vw;
+            text-align: center;
+          }
+
+          h3 {
+            font-size: 18px;
+          }
+
+          p {
+            text-align: justify;
+          }
+        }
+        &__timeline {
+          display: none;
+        }
+        h4 {
+          margin-top: 0;
+        }
+      }
+    }
+    .team {
+      margin-top: 80px;
+      &__paragraph {
+        width: 80%;
+        line-height: 26px;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .about {
+      &__quote {
+        &__text {
+          font-size: 12px;
+          line-height: 20px;
+        }
+        &__author {
+          font-size: 12px;
+        }
+      }
+      &__container {
+        border: none;
+        padding: 0;
+      }
+    }
+    .team {
+      &__paragraph {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+    .subscribe {
+      .about__subscribe__title {
+        margin-top: 0;
+      }
+    }
+  }
+  

@@ -24,9 +24,7 @@
       line-height: 40px;
       text-align: center;
       background: -webkit-linear-gradient(top, #fd749b -13.56%, #281ac8 158.3%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradientText;
       width: 512px;
       position: relative;
 
@@ -60,9 +58,7 @@
       font-size: 28px;
       line-height: 65px;
       background: -webkit-linear-gradient(top, #fd749b -13.56%, #281ac8 158.3%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      @include gradientText;
     }
     &__paragraph {
       line-height: 40px;
@@ -90,9 +86,7 @@
     font-size: 28px;
     line-height: 65px;
     background: -webkit-linear-gradient(top, #fd749b -13.56%, #281ac8 158.3%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradientText;
     position: relative;
 
     &::after {
@@ -113,11 +107,11 @@
       width: 418px;
       text-align: right;
       position: relative;
-      right: 25%;
+      right: 20vw;
       margin-bottom: 50px;
 
       &:nth-of-type(2) {
-        left: 25%;
+        left: 20vw;
         text-align: left;
       }
       h3 {
@@ -129,9 +123,7 @@
           #fd749b -13.56%,
           #281ac8 158.3%
         );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradientText;
       }
       p {
         font-size: 14px;
@@ -167,9 +159,7 @@
       #fd749b -13.56%,
       #281ac8 158.3%
     );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include gradientText;
     position: relative;
 
     &::after {
@@ -228,3 +218,5 @@
 .about__subscribe__title {
   margin-top: 80px;
 }
+
+@import "./about-responsive"
